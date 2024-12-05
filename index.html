@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iparenti Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <script>
+    // Redirect to #home if no hash is present in the URL
+    if (!window.location.hash) {
+      window.location.hash = '#home';
+    }
+  </script>
+ 
+  <!-- Home Section -->
+  <div id="home" class="menu-section home-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="restaurant-title">IPARENTI</h1>
+    </div>
+    <div class="navigation-container">
+      <a href="#food" class="nav-card food-nav">
+        <img src="assets/food.jpg" alt="Food">
+        <h3>Food</h3>
+      </a>
+      <a href="#drinks" class="nav-card drinks-nav">
+        <img src="assets/drink.jpg" alt="Drinks">
+        <h3>Drinks</h3>
+      </a>
+    </div>
+  </div>
+
+  <!-- Food Section -->
+  <div id="food" class="menu-section food-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="section-title">Food</h1>
+    </div>
+    <div class="navigation-container">
+      <a href="#appetizers" class="nav-card appetizers-nav">
+        <img src="assets/appetizer.avif" alt="Appetizers">
+        <h3>Appetizers</h3>
+      </a>
+      <a href="#main-courses" class="nav-card main-courses-nav">
+        <img src="assets/stake.jpg" alt="Main Courses">
+        <h3>Main Courses</h3>
+      </a>
+      <a href="#desserts" class="nav-card desserts-nav">
+        <img src="assets/desser.jpg" alt="Desserts">
+        <h3>Desserts</h3>
+      </a>
+    </div>
+    <a href="#home" class="navigation-btn back-home flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+      <i class="ri-arrow-left-line"></i>
+      Back to Home
+    </a>
+  </div>
+
+  <!-- Drinks Section -->
+  <div id="drinks" class="menu-section drinks-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="section-title">Drinks</h1>
+    </div>
+    <div class="navigation-container">
+      <a href="#wine" class="nav-card wine-nav">
+        <img src="assets/wine.jpg" alt="Wine">
+        <h3>Wine</h3>
+      </a>
+      <a href="#whiskey" class="nav-card whiskey-nav">
+        <img src="assets/whiskey.jpg" alt="Whiskey">
+        <h3>Whiskey</h3>
+      </a>
+      <a href="#cocktails" class="nav-card cocktails-nav">
+        <img src="assets/coctail.webp" alt="Cocktails">
+        <h3>Cocktails</h3>
+      </a>
+    </div>
+    <a href="#home" class="navigation-btn back-home flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+      <i class="ri-arrow-left-line"></i>
+      Back to Home
+    </a>
+  </div>
+
+  <!-- Appetizers Section -->
+  <div id="appetizers" class="menu-section appetizers-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="section-title">Appetizers</h1>
+    </div>
+    <div class="menu-items-container">
+      <div class="menu-item bruschetta-item">
+        <img src="assets/bruschetta.webp" alt="Bruschetta">
+        <h3 class="item-title">Bruschetta</h3>
+        <p class="item-description">Crispy bread topped with fresh tomatoes, basil, and olive oil.</p>
+        <p class="item-price">$8</p>
+      </div>
+      
+      <div class="menu-item mozzarella-item">
+        <img src="assets/MozzarellaSticks.jpg" alt="Mozzarella Sticks">
+        <h3 class="item-title">Mozzarella Sticks</h3>
+        <p class="item-description">Golden fried mozzarella sticks served with marinara sauce.</p>
+        <p class="item-price">$10</p>
+      </div>
+      
+      <div class="menu-item spring-rolls-item">
+        <img src="assets/SpringRolls.webp" alt="Spring Rolls">
+        <h3 class="item-title">Spring Rolls</h3>
+        <p class="item-description">Vegetable spring rolls served with a sweet chili dipping sauce.</p>
+        <p class="item-price">$9</p>
+      </div>
+    </div>
+    <a href="#food" class="navigation-btn back-food flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+      <i class="ri-arrow-left-line"></i>
+      Back to Food
+    </a>
+  </div>
+
+  <!-- Main Courses Section -->
+  <div id="main-courses" class="menu-section main-courses-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="section-title">Main Courses</h1>
+    </div>
+    <div class="menu-items-container">
+      <div class="menu-item steak-item">
+        <img src="assets/stake.jpg" alt="Grilled Ribeye Steak">
+        <h3 class="item-title">Grilled Ribeye Steak</h3>
+        <p class="item-description">Perfectly grilled ribeye with herb butter and roasted vegetables.</p>
+        <p class="item-price">$28</p>
+      </div>
+      
+      <div class="menu-item salmon-item">
+        <img src="assets/SalmonFillet.jpg" alt="Salmon Fillet">
+        <h3 class="item-title">Salmon Fillet</h3>
+        <p class="item-description">Fresh salmon with lemon-dill sauce and quinoa salad.</p>
+        <p class="item-price">$24</p>
+      </div>
+      
+      <div class="menu-item chicken-item">
+        <img src="assets/roastedchicken.jpg" alt="Roasted Chicken">
+        <h3 class="item-title">Roasted Chicken</h3>
+        <p class="item-description">Herb-roasted chicken with garlic mashed potatoes.</p>
+        <p class="item-price">$22</p>
+      </div>
+    </div>
+    <a href="#food" class="navigation-btn back-food flex items-center justify-center gap-2 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+      <i class="ri-arrow-left-line"></i>
+      Back to Food
+    </a>
+  </div>
+
+  <!-- Desserts Section -->
+  <div id="desserts" class="menu-section desserts-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="section-title">Desserts</h1>
+    </div>
+    <div class="menu-items-container">
+      <div class="menu-item chocolate-cake-item">
+        <img src="assets/cacke.jpg" alt="Chocolate Lava Cake">
+        <h3 class="item-title">Chocolate Lava Cake</h3>
+        <p class="item-description">Warm chocolate cake with molten center, served with vanilla ice cream.</p>
+        <p class="item-price">$12</p>
+      </div>
+      
+      <div class="menu-item tiramisu-item">
+        <img src="assets/tiramisu.jpg" alt="Tiramisu">
+        <h3 class="item-title">Tiramisu</h3>
+        <p class="item-description">Classic Italian dessert with layers of coffee-soaked ladyfingers.</p>
+        <p class="item-price">$10</p>
+      </div>
+      
+      <div class="menu-item cheesecake-item">
+        <img src="assets/cheesecacke.avif" alt="New York Cheesecake">
+        <h3 class="item-title">New York Cheesecake</h3>
+        <p class="item-description">Rich and creamy cheesecake with berry compote.</p>
+        <p class="item-price">$11</p>
+      </div>
+    </div>
+    <a href="#food" class="navigation-btn back-food flex items-center justify-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+      <i class="ri-arrow-left-line"></i>
+      Back to Food
+    </a>
+  </div>
+
+  <!-- Wine Section -->
+  <div id="wine" class="menu-section wine-section">
+    <div class="header">
+      <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+      <h1 class="section-title">Wine Selection</h1>
+    </div>
+    <div class="menu-items-container">
+      <div class="menu-item red-wine-item">
+        <img src="assets/wine1.avif" alt="Cabernet Sauvignon">
+        <h3 class="item-title">Cabernet Sauvignon</h3>
+        <p class="item-description">Rich, full-bodied red wine with notes of black currant.</p>
+        <p class="item-price">$45/bottle</p>
+      </div>
+      
+      <div class="menu-item white-wine-item">
+        <img src="assets/wine1.avif" alt="Chardonnay">
+        <h3 class="item-title">Chardonnay</h3>
+        <p class="item-description">Crisp white wine with hints of apple and pear.</p>
+        <p class="item-price">$38/bottle</p>
+      </div>
+      
+      <div class="menu-item rose-wine-item">
+        <img src="assets/wine.jpg" alt="Rosé Wine">
+        <h3 class="item-title">Provence Rosé</h3>
+        <p class="item-description">Light and refreshing rosé from Southern France.</p>
+        <p class="item-price">$42/bottle</p>
+      </div>
+    </div>
+    <a href="#drinks" class="navigation-btn back-drinks flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+      <i class="ri-arrow-left-line"></i>
+      Back to Drinks
+    </a>
+  </div>
+
+<!-- Whiskey Section -->
+<div id="whiskey" class="menu-section whiskey-section">
+  <div class="header">
+    <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+    <h1 class="section-title">Whiskey Selection</h1>
+  </div>
+  <div class="menu-items-container">
+    <div class="menu-item whiskey-item">
+      <img src="assets/whiskey.jpg" alt="Jack Daniels">
+      <h3 class="item-title">Jack Daniels</h3>
+      <p class="item-description">No description needed.</p>
+      <p class="item-price">$45/bottle</p>
+    </div>
+    
+    <div class="menu-item whiskey-item">
+      <img src="assets/whiskey.jpg" alt="Johnnie Walker">
+      <h3 class="item-title">Johnnie Walker</h3>
+      <p class="item-description">No description needed.</p>
+      <p class="item-price">$38/bottle</p>
+    </div>
+    
+    <div class="menu-item whiskey-item">
+      <img src="assets/whiskey.jpg" alt="Redbreast">
+      <h3 class="item-title">Redbreast</h3>
+      <p class="item-description">No description needed.</p>
+      <p class="item-price">$42/bottle</p>
+    </div>
+  </div>
+  <a href="#drinks" class="navigation-btn back-drinks flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+    <i class="ri-arrow-left-line"></i>
+    Back to Drinks
+  </a>
+</div>
+<!-- coctails Section -->
+<div id="cocktails" class="menu-section cocktails-section">
+  <div class="header">
+    <img src="https://lirp.cdn-website.com/9833d641/dms3rep/multi/opt/0WOSX000000r8t44AA_258724381_102011008981640_3586078311507314876_n-240w.png" alt="Restaurant Icon" class="header-icon">
+    <h1 class="section-title">Cocktails Selection</h1>
+  </div>
+  <div class="menu-items-container">
+    <div class="menu-item cocktails-item">
+      <img src="assets/coctail.webp" alt="Negroni">
+      <h3 class="item-title">Negroni</h3>
+      <p class="item-description">Description.</p>
+      <p class="item-price">$10</p>
+    </div>
+    
+    <div class="menu-item cocktails-item">
+      <img src="assets/coctail.webp" alt="Paloma">
+      <h3 class="item-title">Paloma</h3>
+      <p class="item-description">Description.</p>
+      <p class="item-price">$12</p>
+    </div>
+    
+    <div class="menu-item cocktails-item">
+      <img src="assets/coctail.webp" alt="Black Russian">
+      <h3 class="item-title">Black Russian</h3>
+      <p class="item-description">Description.</p>
+      <p class="item-price">$15</p>
+    </div>
+  </div>
+  <a href="#drinks" class="navigation-btn back-drinks flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+    <i class="ri-arrow-left-line"></i>
+    Back to Drinks
+  </a>
+</div>
+</body>
+</html>
